@@ -2,6 +2,7 @@
 # Hackerrank challenge
 
 1. Simple Array Sum
+
 def simpleArraySum(ar):
     # Write your code here
     x=0
