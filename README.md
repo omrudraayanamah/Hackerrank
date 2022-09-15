@@ -11,6 +11,7 @@ def simpleArraySum(ar):
     return x
 
 2. Compare the Triplets
+
 def compareTriplets(a, b):
     # Write your code here
     x=0
@@ -30,6 +31,7 @@ def compareTriplets(a, b):
     return x,y
     
 3. Diagonal Difference
+
 def diagonalDifference(arr):
     # Write your code here
     x=0
@@ -41,6 +43,7 @@ def diagonalDifference(arr):
     return abs(x-y)
 
 4. Plus Minus
+
 def plusMinus(arr):
     # Write your code here
     x=0
