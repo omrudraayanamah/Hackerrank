@@ -44,7 +44,6 @@ def diagonalDifference(arr):
     return abs(x-y)
 
 #### Plus Minus
-
 def plusMinus(arr):
     # Write your code here
     x=0
@@ -60,3 +59,18 @@ def plusMinus(arr):
     print('%.6f' % (x/n))
     print('%.6f' % (z/n))
     print('%.6f' % (y/n))
+
+#### Staircase
+def staircase(n):
+    # Write your code here
+    k=1
+    for j in range(0,n):
+        for i in range(0,n):
+            if i>=n-1:
+                x='#'*k
+                print(x)
+                k=k+1
+            else:
+                print(' ',end='')
+        n=n-1
+
