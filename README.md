@@ -1,4 +1,3 @@
-# Python
 # Hackerrank challenge
 ## Algorithms
 ### Warmup
@@ -12,7 +11,7 @@ def simpleArraySum(ar):
         x=x+ar[i]
     return x
 
-2. Compare the Triplets
+#### Compare the Triplets
 
 def compareTriplets(a, b):
     # Write your code here
@@ -32,7 +31,7 @@ def compareTriplets(a, b):
         y=y+1
     return x,y
     
-3. Diagonal Difference
+#### Diagonal Difference
 
 def diagonalDifference(arr):
     # Write your code here
@@ -44,7 +43,7 @@ def diagonalDifference(arr):
         y=y+arr[i][(n-1)-i]
     return abs(x-y)
 
-4. Plus Minus
+#### Plus Minus
 
 def plusMinus(arr):
     # Write your code here
