@@ -74,3 +74,17 @@ def staircase(n):
                 print(' ',end='')
         n=n-1
 
+#### Mini-Max Sum
+def miniMaxSum(arr):
+    # Write your code here
+    mx=arr[0]
+    mnx=arr[0]
+    x=0
+    n=len(arr)
+    for i in range(0,n):
+        if arr[i]>mx:
+            mx=arr[i]
+        if arr[i]<mnx:
+            mnx=arr[i]
+        x=x+arr[i]
+    return print(x-mx, x-mnx)
