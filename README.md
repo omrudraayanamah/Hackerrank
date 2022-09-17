@@ -3,7 +3,7 @@
 ## Algorithms
 ### Warmup
 
-1. Simple Array Sum
+#### Simple Array Sum
 
 def simpleArraySum(ar):
     # Write your code here
