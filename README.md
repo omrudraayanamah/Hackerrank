@@ -1,6 +1,15 @@
 # Hackerrank challenge
 ## Algorithms
 ### Warmup
+#### Birthday Cake Candles
+
+def birthdayCakeCandles(candles):
+    # Write your code here
+    mx=0
+    for i in range(0,candles_count):
+        if candles[i]>mx:
+            mx=candles[i]
+    return candles.count(mx)
 
 #### Simple Array Sum
 
