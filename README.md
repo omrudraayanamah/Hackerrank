@@ -1,5 +1,7 @@
 # Python
 # Hackerrank challenge
+## Algorithms
+### Warmup
 
 1. Simple Array Sum
 
