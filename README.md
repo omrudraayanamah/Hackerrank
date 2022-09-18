@@ -1,6 +1,37 @@
 # Hackerrank challenge
 ## Algorithms
-### Warmup
+
+
+
+
+
+#### Marc's Cakewalk
+
+#### Time Conversion
+
+def timeConversion(s):
+    v=None
+    ans=''
+    x=s[0]+s[1]
+    x=int(x)
+    if s[8]=='A':
+        if x==12:
+            v='00'
+        elif x<10:
+            v='0'+str(x)
+        else:
+            v=str(x)
+    else:
+        if x<12:
+            v=str(x+12)
+        else:
+            v=str(x)
+            
+    ans=''
+    for i in range(2,8):
+        ans=ans+s[i]
+    return v+ans
+    
 #### Birthday Cake Candles
 
 def birthdayCakeCandles(candles):
