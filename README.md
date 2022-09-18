@@ -8,9 +8,7 @@
 #### Marc's Cakewalk
 
 #### Time Conversion
-
-
-def timeConversion(s):
+    def timeConversion(s):
     v=None
     ans=''
     x=s[0]+s[1]
