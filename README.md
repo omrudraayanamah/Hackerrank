@@ -8,7 +8,7 @@
 #### Marc's Cakewalk
 
 #### Time Conversion
-    def timeConversion(s):
+        def timeConversion(s):
     v=None
     ans=''
     x=s[0]+s[1]
@@ -25,7 +25,6 @@
             v=str(x+12)
         else:
             v=str(x)
-            
     ans=''
     for i in range(2,8):
         ans=ans+s[i]
@@ -33,7 +32,7 @@
     
 #### Birthday Cake Candles
 
-def birthdayCakeCandles(candles):
+        def birthdayCakeCandles(candles):
     # Write your code here
     mx=0
     for i in range(0,candles_count):
@@ -43,7 +42,7 @@ def birthdayCakeCandles(candles):
 
 #### Simple Array Sum
 
-def simpleArraySum(ar):
+        def simpleArraySum(ar):
     # Write your code here
     x=0
     for i in range(0,ar_count):
@@ -52,7 +51,7 @@ def simpleArraySum(ar):
 
 #### Compare the Triplets
 
-def compareTriplets(a, b):
+        def compareTriplets(a, b):
     # Write your code here
     x=0
     y=0
@@ -72,7 +71,7 @@ def compareTriplets(a, b):
     
 #### Diagonal Difference
 
-def diagonalDifference(arr):
+        def diagonalDifference(arr):
     # Write your code here
     x=0
     for i in range(0,n):
@@ -83,7 +82,7 @@ def diagonalDifference(arr):
     return abs(x-y)
 
 #### Plus Minus
-def plusMinus(arr):
+        def plusMinus(arr):
     # Write your code here
     x=0
     y=0
@@ -100,7 +99,7 @@ def plusMinus(arr):
     print('%.6f' % (y/n))
 
 #### Staircase
-def staircase(n):
+        def staircase(n):
     # Write your code here
     k=1
     for j in range(0,n):
@@ -114,7 +113,7 @@ def staircase(n):
         n=n-1
 
 #### Mini-Max Sum
-def miniMaxSum(arr):
+        def miniMaxSum(arr):
     # Write your code here
     mx=arr[0]
     mnx=arr[0]
