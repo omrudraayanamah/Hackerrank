@@ -3,10 +3,35 @@
 
 
 
+#### Grid Challenge
 
+def gridChallenge(grid):
+    z0=''
+    y= True
+    l=len(grid[0])
+    for j in range(0,l):
+        for i in range(0,n):
+            z0 = z0 + ''.join(sorted(grid[i]))[j]
+
+        ans0=''.join(sorted(z0))
+
+        x=bool(z0==ans0)
+
+        y= y and x
+        z0=''
+    if y==True:
+        ans='YES'
+    else:
+        ans='NO'
+    return ans
 
 #### Marc's Cakewalk
-
+        def marcsCakewalk(calorie):
+    x=0
+    calorie.sort(reverse=True)
+    for i in range(0,n):
+        x=x+2**i*calorie[i]
+    return x
 #### Time Conversion
         def timeConversion(s):
     v=None
