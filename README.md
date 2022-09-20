@@ -2,10 +2,28 @@
 ## Algorithms
 
 
+#### Luck Balance
+    def luckBalance(k, contests):
+        l=0
+        lst=[]
+        negative_num=0
+        contests.sort()
+        for i in range(0,n):
+            if contests[i][1]==0:
+                l=l+contests[i][0]
+            else:
+                lst.append(contests[i][0])
+
+        for i in range(0,len(lst)):
+            if i<len(lst)-k:
+                negative_num=negative_num+lst[i]
+            else:
+                l=l+lst[i]
+
+        return l-negative_num
 
 #### Grid Challenge
-
-def gridChallenge(grid):
+        def gridChallenge(grid):
     z0=''
     y= True
     l=len(grid[0])
