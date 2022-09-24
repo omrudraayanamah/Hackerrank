@@ -1,7 +1,43 @@
 # Hackerrank challenge
 ## Algorithms
 
+#### Maximum Perimeter Triangle
+    def maximumPerimeterTriangle(sticks):
+        ##Total possible pair 
+        x=0
+        lst=[]
+        for i in range(0,n):
+            for j in range(0,n):
+                for k in range(0,n):
+                    if i!=j and j!=k and k!=i:
+                        lst.append([sticks[i],sticks[j],sticks[k]])
 
+
+        try:
+            ## Triangle condition                
+            tri=[]
+            for i in range(0,len(lst)):
+                if lst[i][0]+lst[i][1]>lst[i][2] and lst[i][1]+lst[i][2]>lst[i][0] and lst[i][2]+lst[i][0]>lst[i][1]:
+                    tri.append(lst[i])
+
+            ## Maximum perimeter
+            mx=0
+            list3=[]
+            for i in range(0,len(tri)):
+                if sum(tri[i])>mx:
+                    mx=sum(tri[i])
+            for i in range(0,len(tri)):
+                if sum(tri[i])==mx:
+                    list3.append(tri[i])
+
+            a=max(list3)
+            a.sort()
+
+            print(a[0],end=' ')
+            print(a[1],end=' ')
+            print(a[2],end=' ')
+        except:
+            return [-1]
 #### Luck Balance
     def luckBalance(k, contests):
         l=0
