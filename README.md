@@ -1,13 +1,13 @@
 # Hackerrank challenge
 ## Algorithms
 #### Grading Students
-def gradingStudents(grades):
-    for i in range(0,len(grades)):
-        if grades[i]>35:
-            if grades[i]%5>=3:
-                grades[i]=grades[i]+5-grades[i]%5
-        
-    return grades
+    def gradingStudents(grades):
+        for i in range(0,len(grades)):
+            if grades[i]>35:
+                if grades[i]%5>=3:
+                    grades[i]=grades[i]+5-grades[i]%5
+
+        return grades
 #### Maximum Perimeter Triangle
     def maximumPerimeterTriangle(sticks):
         ##Total possible pair 
