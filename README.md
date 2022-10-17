@@ -1,5 +1,22 @@
 # Hackerrank challenge
 ## Algorithms
+#### Apple and Orange
+    def countApplesAndOranges(s, t, a, b, apples, oranges):
+    # Write your code here
+    for i in range(0,m):
+        apples[i]=apples[i]+a
+    for i in range(0,n):
+        oranges[i]=oranges[i]+b
+    count=0
+    countx=0
+    for i in range(0,m):
+        if s<=apples[i]<=t:
+            count=count+1
+    for i in range(0,n):
+        if s<=oranges[i]<=t:
+            countx=countx+1
+    print(count)
+    print(countx)
 #### Grading Students
     def gradingStudents(grades):
         for i in range(0,len(grades)):
