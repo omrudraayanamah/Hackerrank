@@ -1,5 +1,26 @@
 # Hackerrank challenge
 ## Algorithms
+####Number Line Jumps
+    def kangaroo(x1, v1, x2, v2):
+        # Write your code here
+        Ans=''
+        if x1>x2 and v1<v2:
+            X=x1-x2
+            V=v2-v1
+            if X%V==0:
+                Ans='Yes'
+            else:
+                Ans='No'
+        elif x1<x2 and v1>v2:
+            X=x2-x1
+            V=v1-v2
+            if X%V==0:
+                Ans='Yes'
+            else:
+                Ans='No'
+        else:
+            Ans='No'
+        return Ans
 #### Apple and Orange
     def countApplesAndOranges(s, t, a, b, apples, oranges):
     # Write your code here
