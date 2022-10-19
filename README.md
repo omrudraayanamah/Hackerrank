@@ -1,5 +1,24 @@
 # Hackerrank challenge
 ## Algorithms
+####Between Two Sets
+    def getTotalX(a, b):
+    countx=0
+    lst=[]
+    for j in range(arr[0],brr[m-1]+1,arr[0]):
+        X=True
+        for i in range(0,len(arr)):
+            D=bool(j%arr[i]==0)
+            X = X and D
+        if X is True:
+            lst.append(j)    
+    for j in range(0,len(lst)):  
+        X=True
+        for i in range(0,len(brr)):
+            D=bool(brr[i]%lst[j]==0)
+            X = X and D
+        if X is True:
+            countx=countx+1
+    return countx
 ####Number Line Jumps
     def kangaroo(x1, v1, x2, v2):
         # Write your code here
