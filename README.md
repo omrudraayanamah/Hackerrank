@@ -1,6 +1,7 @@
 # Hackerrank challenge
 ## Algorithms
 ####Between Two Sets
+
     def getTotalX(a, b):
     countx=0
     lst=[]
@@ -20,6 +21,7 @@
             countx=countx+1
     return countx
 ####Number Line Jumps
+
     def kangaroo(x1, v1, x2, v2):
         # Write your code here
         Ans=''
