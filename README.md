@@ -1,5 +1,24 @@
 # Hackerrank challenge
 ## Algorithms
+
+
+####Breaking the Records
+    
+    def breakingRecords(scores):   
+    mx=scores[0]
+    count=0
+    for i in range(0,n):
+        if scores[i]>mx:
+            mx=scores[i]
+            count=count+1
+    mxe=scores[0]
+    countx=0
+    for i in range(0,n):
+        if scores[i]<mxe:
+            mxe=scores[i]
+            countx=countx+1
+    return count,countx
+
 ####Between Two Sets
 
     def getTotalX(a, b):
