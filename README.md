@@ -2,6 +2,7 @@
 ## Algorithms
 
 ####birthday segment
+    
     def birthday(s, d, m):
     count = 0
     for i in range(n-m+1):
