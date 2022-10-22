@@ -1,7 +1,13 @@
 # Hackerrank challenge
 ## Algorithms
 
-
+####birthday segment
+    def birthday(s, d, m):
+    count = 0
+    for i in range(n-m+1):
+        if sum(s[i:i+m])==d:
+            count += 1
+    return count
 ####Breaking the Records
     
     def breakingRecords(scores):   
