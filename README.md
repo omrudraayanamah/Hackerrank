@@ -1,5 +1,20 @@
 # Hackerrank challenge
 ## Algorithms
+#### Migratory Birds
+    def migratoryBirds(arr):
+        arr.sort()
+        data=dict(Counter(arr))
+        maximum=max(data, key=data.get)
+        return maximum
+#### Divisible Sum Pairs
+
+    def divisibleSumPairs(n, k, ar):
+        count=0
+        for i in range(0,n):
+            for j in range(0,n):
+                if i!=j and i<j and (ar[i]+ar[j])%k==0:
+                    count += 1
+        return count
 
 ####birthday segment
     
