@@ -1,5 +1,74 @@
 # Hackerrank challenge
 ## Algorithms
+#### Counting Valleys
+    def countingValleys(steps, path):
+    lst=[]
+    count = 0
+    countx = 0
+    for i in path:
+        if i=='U':
+            count += 1
+        else:
+            count -= 1
+        lst.append(count)
+    for i in range(0,len(lst)-1):
+        if lst[i]<=0 and lst[i+1]==0:
+            countx += 1
+    return countx
+#### Drawing book
+    def pageCount(n, p):
+    if n%2==0:
+        if p<=n/2: #Start from left
+            page_num=int(p/2)
+        elif p>n/2:
+            px=n-p
+            page_num=int((px+1)/2)
+    else:
+        if p<(n+1)/2:
+            if p%2==0:
+                page_num=p/2
+            else:
+                page_num=(p-1)/2
+        else:
+            page_num=int((n-p)/2)
+    return int(page_num)
+#### Sales by Match
+    
+    def sockMerchant(n, ar):
+        # Write your code here
+        count=0
+        data=dict(Counter(ar))
+        for x in data.values():
+            count += x//2
+        return count
+
+#### Bill Division
+    
+    def bonAppetit(bill, k, b):
+    share = b - (sum(bill)-bill[k])/2
+    if share!=0:
+        share=print(int(share))
+    else:
+        share=print('Bon Appetit')
+    return share
+#### Day of the programmer
+    
+    def dayOfProgrammer(y):
+    if 1918<y<=2700:
+        if y%400==0:
+            date= '12.09.{}'.format(y)
+        elif y%4==0 and y%100!=0:
+            date= '12.09.{}'.format(y)
+        else:
+            date= '13.09.{}'.format(y)
+    elif 1700<=y<=1917:
+        if y%4==0:
+            date='12.09.{}'.format(y)
+        else:
+            date='13.09.{}'.format(y)
+    elif y==1918:
+        date='26.09.1918'
+        
 #### Migratory Birds
     def migratoryBirds(arr):
         arr.sort()
@@ -16,7 +85,7 @@
                     count += 1
         return count
 
-####birthday segment
+#### birthday segment
     
     def birthday(s, d, m):
     count = 0
@@ -24,7 +93,7 @@
         if sum(s[i:i+m])==d:
             count += 1
     return count
-####Breaking the Records
+#### Breaking the Records
     
     def breakingRecords(scores):   
     mx=scores[0]
@@ -41,7 +110,7 @@
             countx=countx+1
     return count,countx
 
-####Between Two Sets
+#### Between Two Sets
 
     def getTotalX(a, b):
     countx=0
@@ -61,7 +130,7 @@
         if X is True:
             countx=countx+1
     return countx
-####Number Line Jumps
+#### Number Line Jumps
 
     def kangaroo(x1, v1, x2, v2):
         # Write your code here
