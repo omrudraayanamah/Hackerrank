@@ -1,5 +1,24 @@
 # Hackerrank challenge
 ## Algorithms
+#### Cat and mouse
+    def catAndMouse(x, y, z):
+    if abs(z-x) > abs(z-y):
+        ans = 'Cat B'
+    elif abs(z-x) == abs(z-y):
+        ans = 'Mouse C'
+    else:
+        ans = 'Cat A'
+    return ans
+#### Electronics Shop
+    def getMoneySpent(keyboards, drives, b):
+    spent=0
+    for i in range(0,n):
+        for j in range(0,m):
+            if b >= keyboards[i] + drives[j] > spent:
+                spent = keyboards[i] + drives[j]
+                print(spent,keyboards[i],drives[j])
+    spent = -1 if spent==0 else spent
+    return spent
 #### Counting Valleys
     def countingValleys(steps, path):
     lst=[]
