@@ -1,5 +1,16 @@
 # Hackerrank challenge
 ## Algorithms
+#### Picking Numbers
+    def pickingNumbers(a):
+    a.sort()
+    mx=0
+    for i in range(0,n):
+        for j in range(i+1,n):
+            if a[j]-a[i]<=1:
+                x = len(a[i:j+1])
+                if x>mx:
+                    mx=x
+    return mx  
 #### Cat and mouse
     def catAndMouse(x, y, z):
     if abs(z-x) > abs(z-y):
